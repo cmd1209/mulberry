@@ -40,21 +40,36 @@ section.features
 	flex-wrap: wrap
 
 .area
+	margin: 0 0 20px 0
+
+.area-bg-01, .area-bg-02, .area-bg-03
 	position: relative
 	flex: 1
 	flex-basis: 30%
-	&:first-of-type
-		margin: 0 20px 0 0
-		@media all and (max-width: $screen-m)
-			margin: 2px
-	&:last-of-type
-		margin: 0 0 0 20px
-		@media all and (max-width: $screen-m)
-			margin: 2px
-	margin-bottom: 20px
+.area-bg-01
+	margin: 0 10px 0 0
 	@media all and (max-width: $screen-m)
-		flex-basis: 45%
-		margin: 2px
+		flex-basis: 48% 
+		margin: 0 4px 4px 0
+.area-bg-02
+	margin: 0 10px 0 10px
+	@media all and (max-width: $screen-m)
+		margin: 0 0 4px 4px
+		flex-basis: 48% 
+.area-bg-03
+	margin: 0 0 0 10px
+	@media all and (max-width: $screen-m)
+	margin: 4px 0 0 0
+		flex-basis: 100% 
+
+.area-bg-01
+	background: url($baseurl + "/assets/images/mulberry_02.jpg") center center / cover no-repeat
+.area-bg-02
+	background: url($baseurl + "/assets/images/mulberry_01.jpg") center center / cover no-repeat
+.area-bg-03
+	background: url($baseurl + "/assets/images/mulberry_03.jpg") center center / cover no-repeat
+.area-bg-04
+	background: url($baseurl + "/assets/images/mulberry_01.jpg") center center / cover no-repeat
 
 .area-image
 	height: 338px
@@ -73,12 +88,3 @@ section.features
 	left: 50%
 	bottom: 0
 	transform: translateX(-50%)
-
-.area-bg-01
-	background: url($baseurl + "/assets/images/mulberry_02.jpg") center center / cover no-repeat
-.area-bg-02
-	background: url($baseurl + "/assets/images/mulberry_01.jpg") center center / cover no-repeat
-.area-bg-03
-	background: url($baseurl + "/assets/images/mulberry_03.jpg") center center / cover no-repeat
-.area-bg-04
-	background: url($baseurl + "/assets/images/mulberry_01.jpg") center center / cover no-repeat
