@@ -1,0 +1,43 @@
+section.probst
+	padding: 2em 0
+	background: url($baseurl + "/assets/images/probst-background.jpg") center center / cover no-repeat
+	min-height: 450px
+	img
+		width: 100%
+		max-width: 100%
+	p
+		color: white
+		text-align: center
+
+.flex-probst
+	position: relative
+	display: flex
+	padding: 0 2em
+	@media all and (max-width: $screen-s)
+		flex-wrap: wrap
+.flexL
+	padding: 0 1em
+	flex-basis: 65%
+	@media all and (max-width: $screen-s)
+		flex-basis: 100%
+.flexR
+	flex-basis: 35%
+	@media all and (max-width: $screen-s)
+		flex-basis: 100%
+
+.opening
+	z-index: 999
+	position: absolute
+	background-color: $pink
+	color: white
+	padding: 0.75em 2em
+	transform: rotate(-15deg) translate(-100px, -60px)
+	@media all and (max-width: $screen-m)
+		transform: rotate(0deg) translate(0px,-85px)
+.probst-logo
+	width: 350px!important
+	height: auto
+	position: relative
+	left: 50%
+	margin: 0 0 1em 0
+	transform: translateX(-50%)

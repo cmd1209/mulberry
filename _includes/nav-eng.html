@@ -1,0 +1,9 @@
+<ul>
+	<li><a href="http://www.liberty-bremerhaven.de">The Liberty</a></li>
+			<!-- <li><a {% if page.url == "/dining/" %}class="active"{% endif %} href="/dining/">Dining</a></li> -->
+			{% if page.url == "/impressum.html" %}
+			<li><a {% if page.url == "/probst/" %}class="active"{% endif %} href="{{ site.baseurl}}/#probst">Phillip Probst at Mulberry</a></li>
+{% else %}
+			<li><a {% if page.url == "/probst/" %}class="active"{% endif %} href="#probst">Phillip Probst at Mulberry</a></li>
+{% endif %}
+</ul>

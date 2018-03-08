@@ -1,0 +1,70 @@
+
+$screen-xl: 940px
+// $screen-xl: 1690px
+$screen-l: 940px
+// $screen-l: 1280px
+$screen-m: 940px
+$screen-s: 736px
+$screen-xs: 480px
+
+@media all and (max-width: $screen-xl)
+@media all and (max-width: $screen-l)
+@media all and (max-width: $screen-m)
+@media all and (max-width: $screen-s)
+@media all and (max-width: $screen-xs)
+
+body
+	background-color: white
+
+.btn
+	color: white
+	background-color: $red
+	text-transform: uppercase
+	font-size: 13px
+	padding: 6px 18px
+	border-radius: 2px
+
+.flex-cont
+	display: flex
+
+.margin-bot
+	margin-bottom: 2em
+		
+.wrapper
+	position: relative
+	@media all and (max-width: $screen-m)
+		padding: 0 4px
+
+	// temp did away with the max-width scaling
+
+	margin: 0 auto
+	max-width: $screen-xl
+	@media all and (max-width: $screen-l)
+		max-width: $screen-l
+	@media all and (max-width: $screen-m)
+		max-width: $screen-m
+	@media all and (max-width: $screen-s)
+		max-width: $screen-s
+	@media all and (max-width: $screen-xs)
+		max-width: $screen-xs
+
+	$border: 2px solid $gold
+
+.order1
+	order: 1
+.order2
+	order: 2
+.order3
+	order: 3
+	@media all and (max-width: $screen-s)
+		order: 4
+.order4
+	order: 4
+	@media all and (max-width: $screen-s)
+		order: 3
+.order5
+	order: 5
+.order6
+	order: 6
+.order7
+	order: 7

@@ -1,0 +1,56 @@
+.footer
+	margin: 3em 0 0 0
+	padding: 0 0 1em 0
+	text-align: center
+	h1, h2, h3, h4, h5, h6, p, a
+		color: $red
+		font-size: 90%
+	a
+		color: $red
+		display: block
+
+.footer-caption
+	margin: 2em 0 0 0
+	p
+		font-size: 85%
+		color: $red
+	a
+		display: inline
+		font-weight: 700
+
+.footerlist
+	display: flex
+	align-items: center
+	justify-content: center
+	li
+		margin: 0.5em
+
+.footer-logo
+	width: 325px
+	height: auto
+
+.star-logo-footer
+	width: 65px
+	height: auto
+	margin: 1em 0
+
+nav.footernav
+	display: flex
+	justify-content: center
+	margin-bottom: 2em
+	width: 100%
+	z-index: 100
+	& ul
+		display: flex
+		& a
+			padding: 10px 20px
+			color: $red
+			font-size: 13px
+			text-transform: uppercase
+			display: block
+			&:hover
+				color: white!important
+				background-color: $red
+nav.footernav a.active
+	color: $red
+	text-decoration: underline
