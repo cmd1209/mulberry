@@ -33,12 +33,18 @@
 		$('.mobile-cont').toggleClass('hidden visible');
 		});
 
-		$('a').click(function(){
+		$('.speisactivator').click(function() {
+  	$( ".onlinesk" ).slideToggle( "slow", function() {
+    // Animation complete.
+  		});
+		});
+
+		$('a.navlink').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 500);
     return false;
-});
+		});
 
 
 
@@ -48,5 +54,3 @@
 
 
 })(jQuery, this);
-
-

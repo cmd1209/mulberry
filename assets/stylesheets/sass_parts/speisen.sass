@@ -1,0 +1,64 @@
+section.speisen
+
+.onlinesk
+	overflow: hidden
+	background-color: $light-grey
+	display: none
+	width: 100%
+
+.meal
+	flex-basis: 33.333%
+	padding: 1em 
+	@media all and (max-width: $screen-s)
+		flex-basis: 50%
+	h3,h4,h5, p, a
+		text-transform: uppercase
+		font-family: $basefont!important
+		color: $pink
+		text-align: center!important
+
+.meal-title
+	font-weight: 300
+	border-top: 1px solid $pink
+	margin: 1em 0
+	padding: 1em 0 0 0
+	letter-spacing: 1.2px
+.meal-desc
+	font-size: 85%
+	font-family: $basefont!important
+	color: $pink
+.meal em
+	font-size: 75%
+
+.speisactivator
+	font-weight: 700
+	color: $pink
+	&:visited
+		color: $pink
+
+@keyframes wiggle
+	0%
+		transform: rotate(0deg) translate(0,0)
+	25%
+		transform: rotate(0deg) translate(0,0)
+	30%
+		transform: rotate(-1deg) translate(-2px,0)
+	35%
+		transform: rotate(2deg) translate(0,2px)
+	50%
+		transform: rotate(0deg) translate(2px,-2px)
+	75%
+		transform: rotate(0deg) translate(0,0)
+	100%
+		transform: rotate(0deg) translate(0,0)
+
+#stick1
+	animation: wiggle 5s ease-in infinite
+#stick2
+	animation: wiggle 5.25s ease-in infinite alternate
+#spoon
+	animation: wiggle 6s ease-in infinite
+#knife
+	animation: wiggle 5.33s ease-in infinite alternate
+#fork
+	animation: wiggle 5.5s ease-in infinite
