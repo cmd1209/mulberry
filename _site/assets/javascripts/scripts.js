@@ -33,11 +33,11 @@
 		$('.mobile-cont').toggleClass('hidden visible');
 		});
 
-		$('.speisactivator').click(function() {
-  	$( ".onlinesk" ).slideToggle( "slow", function() {
-    // Animation complete.
-  		});
-		});
+		// $('.speisactivator').click(function() {
+  // 	$( ".onlinesk" ).slideToggle( "slow", function() {
+  //   // Animation complete.
+  // 		});
+		// });
 
 		$('a.navlink').click(function(){
     $('html, body').animate({
