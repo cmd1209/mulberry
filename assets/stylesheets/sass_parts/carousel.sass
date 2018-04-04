@@ -19,3 +19,54 @@
 	background: url($baseurl + "/assets/images/libertykv12.jpg") center center / cover no-repeat
 .kv05
 	background: url($baseurl + "/assets/images/libertykv13.jpg") center center / cover no-repeat
+
+
+.nowopen
+	position: absolute
+	z-index: 999
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+	.logo
+		padding: 1.5em 2em
+		background-color: rgba(white,0.85)
+		border-radius: 3px
+	h2
+		letter-spacing: 3px
+		text-align: center
+		text-transform: uppercase
+		padding: 0.5em 2em
+		color: white
+		background-color: rgba($red,0.85)
+		border-radius: 3px
+		@media all and (max-width: $screen-s)
+			font-size: 95%
+
+.owl-nav
+	position: absolute
+	height: 50px
+	width: 100%
+	z-index: 999
+	font-size: 80px
+	top: 50%
+	transform: translateY(-50%)
+	margin-top: 0!important
+.owl-prev
+	position: absolute
+	font-size: 50px!important
+	background: none!important
+	left: 0em
+	transition: all .3s ease-in-out
+	&:hover
+		transform: translateX(-2px) scale(1,2)
+		transition: all .3s ease-in-out
+.owl-next
+	position: absolute
+	font-size: 50px!important
+	background: none!important
+	right: 0em
+	transition: all .3s ease-in-out
+	&:hover
+		transform: translateX(2px) scale(1,2)
+		transition: all .3s ease-in-out
+	

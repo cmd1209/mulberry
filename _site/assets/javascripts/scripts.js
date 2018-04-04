@@ -20,12 +20,13 @@
 		    items:1,
 		    loop:true,
 		    margin:0,
-		    autoplay:true,
+		    autoplay:false,
 				animateOut: 'fadeOut',
 		    autoplayTimeout:4500,
 		    autoplayHoverPause:true,
-				dots: true,
-				nav: false,
+				dots: false,
+				nav: true,
+				navText: ["&#10094;","&#10095;"],
 		});
 
 		$('#menu-icon').click(function(){

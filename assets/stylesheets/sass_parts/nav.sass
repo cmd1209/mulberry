@@ -4,7 +4,6 @@ nav.normal-navigation
   justify-content: center
   width: 100%
   z-index: 100
-  @media all and (max-width: $screen-s)
   & ul
     display: flex
     & a
@@ -14,6 +13,8 @@ nav.normal-navigation
       text-transform: uppercase
       display: block
       text-align: center
+      @media all and (max-width: $screen-m)
+        padding: 10px 8px
       &:hover
         color: $red!important
         background-color: white
