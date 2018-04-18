@@ -24,13 +24,16 @@ header.header
 	// margin: 0 0 2em 0
 	width: 100%
 	background-color: white
+	@media all and (max-width: $screen-s)
+		position: sticky
+		z-index: 1001
+		top: -1px
 	.wrapper
 		@media all and (max-width: $screen-m)
 			padding: 0 4px
 	p
 		font-size: 85%
 		color: $red
-
 
 .flex-center
 	justify-content: center
@@ -92,8 +95,8 @@ header.header
 		flex: 1
 		margin: 2em 0
 		@media all and (max-width: $screen-s)
-			width: 275px
-			margin: 22px 0 16px 0
+			width: 210px
+			margin: 18px 0 10px 0
 
 .logo-long
 	opacity: 1

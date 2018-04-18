@@ -1,9 +1,18 @@
-<ul>
-	<li><a href="http://www.liberty-bremerhaven.de">The Liberty</a></li>
-{% if page.url == "/impressum.html" %}
-			<li><a class="navlink" href="{{ site.baseurl}}/#probst">Phillip Probst</a></li>
-{% else %}
-			<li><a class="navlink" } href="#probst">Phillip Probst</a></li>
-			<li><a class="navlink" } href="/jobs">Stellenangebote</a></li>
-{% endif %}
-</ul>
+<nav class="normal-navigation">
+	<ul>
+		<li><a href="http://www.liberty-bremerhaven.de" target="_blank">The Liberty</a></li>
+	{% if page.url == "/impressum.html" %}
+				<li><a class="navlink" href="{{ site.baseurl}}/#probst">Phillip Probst</a></li>
+				<li><a class="navlink" } href="{{ site.baseurl}}/#location">Location</a></li>
+	{% elsif page.url == "/jobs.html" %}			
+				<li><a class="navlink" href="{{ site.baseurl}}/#probst">Phillip Probst</a></li>
+				<li><a class="navlink" } href="{{ site.baseurl}}/#location">Location</a></li>
+	{% elsif page.url == "/datenschutz.html" %}			
+				<li><a class="navlink" href="{{ site.baseurl}}/#probst">Phillip Probst</a></li>
+				<li><a class="navlink" } href="{{ site.baseurl}}/#location">Location</a></li>
+	{% else %}
+				<li><a class="navlink" } href="#probst">Phillip Probst</a></li>
+				<li><a class="navlink" } href="#location">Location</a></li>
+	{% endif %}
+	</ul>
+</nav>

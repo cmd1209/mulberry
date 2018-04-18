@@ -31,7 +31,7 @@
 
 		$('#menu-icon').click(function(){
 		$(this).toggleClass('open');
-		$('.mobile-cont').toggleClass('hidden visible');
+		$('.normal-navigation').slideToggle('fast');
 		});
 
 		// $('.speisactivator').click(function() {
