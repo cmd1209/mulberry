@@ -5,15 +5,17 @@
 
 		// DOM ready, take it away
 
-		$('.owl-one').owlCarousel({
+		$('.owl-mulberry').owlCarousel({
 		    items:1,
 		    loop:true,
-		    margin:0,
+		    margin:20,
 		    autoplay:true,
 				animateOut: 'fadeOut',
-		    autoplayTimeout:8000,
+		    autoplayTimeout:4000,
 		    autoplayHoverPause:true,
 				dots: false,
+				nav: true,
+				navText: ["&#10094;","&#10095;"]
 		});
 
 		$('.owl-two').owlCarousel({
@@ -26,7 +28,7 @@
 		    autoplayHoverPause:true,
 				dots: false,
 				nav: true,
-				navText: ["&#10094;","&#10095;"],
+				navText: ["&#10094;","&#10095;"]
 		});
 
 		$('#menu-icon').click(function(){

@@ -15,7 +15,7 @@
 		color: $red
 	p
 		color: $red
-	a
+	a, a:visited, a:active
 		color: $red
 		font-weight: 700
 
@@ -23,6 +23,10 @@
 	@media all and (min-width: $screen-s)
 		display: none
 
+section.introtext
+	padding-bottom: 4em
+	@media all and (max-width: $screen-s)
+		padding-bottom: 1em
 
 .intro
 	margin: 0 0 1.25em 0

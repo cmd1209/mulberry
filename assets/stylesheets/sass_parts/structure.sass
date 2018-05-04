@@ -36,6 +36,26 @@ body
 .job-title
 	margin: 1em 0
 
+.lockup
+	width: 50%
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+	background-color: rgba($red,0.85)
+	padding: 2em
+	border-radius: 3px
+	p
+		color: $light-grey
+		margin: 0
+	a
+		color: white
+		text-decoration: underline
+	@media all and (max-width: $screen-m)
+		width: 75%
+	@media all and (max-width: $screen-s)
+		width: 85%
+
 .margin-bot
 	margin-bottom: 2em
 		

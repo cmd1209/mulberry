@@ -32,8 +32,12 @@ header.header
 		@media all and (max-width: $screen-m)
 			padding: 0 4px
 	p
-		font-size: 85%
+		font-size: 80%
+		line-height: 16px
+		letter-spacing: -0.2px
 		color: $red
+	a, a:visited, a:active
+		color: $pink
 
 .flex-center
 	justify-content: center
@@ -70,6 +74,21 @@ header.header
 	text-align: right
 	@media all and (max-width: $screen-s)
 		display: none 
+
+.jobs-btn
+	font-size: 13px
+	font-weight: 400
+	line-height: 27px
+	color: #fff !important
+	background-color: #828282
+	padding: 7px 10px
+	border-radius: 11px
+	vertical-align: top!important
+	margin: 4px 0 0 0!important
+	text-transform: uppercase
+	&:hover
+		background-color: $pink
+		color: white!important
 
 .lang-block
 	order: 1
