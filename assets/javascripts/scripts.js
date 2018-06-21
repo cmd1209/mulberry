@@ -22,11 +22,11 @@
 		    items:1,
 		    loop:true,
 		    margin:0,
-		    autoplay:false,
+		    autoplay:true,
 				animateOut: 'fadeOut',
 		    autoplayTimeout:4500,
 		    autoplayHoverPause:true,
-				dots: false,
+				dots: true,
 				nav: true,
 				navText: ["&#10094;","&#10095;"]
 		});
@@ -36,11 +36,6 @@
 		$('.normal-navigation').slideToggle('fast');
 		});
 
-		// $('.speisactivator').click(function() {
-  // 	$( ".onlinesk" ).slideToggle( "slow", function() {
-  //   // Animation complete.
-  // 		});
-		// });
 
 		$('a.navlink').click(function(){
     $('html, body').animate({
@@ -49,11 +44,20 @@
     return false;
 		});
 
+		var reserve = $(".reserve");
+		var module = $(".module");
+		var close = $("#close-icon");
+
+		reserve.click(function(){
+			module.toggleClass('offhidden centered');
+		});
+		close.click(function(){
+			module.toggleClass('offhidden centered');
+		});
+
 
 
 	});
-
-
 
 
 })(jQuery, this);

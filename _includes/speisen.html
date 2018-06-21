@@ -2,15 +2,59 @@
 <a id="speisen"></a>
 <section class="speisen">
 	<div class="wrapper center">
-	<!-- <a href="javascript:void(0)"><img class="speisactivator" src="{{site.baseurl }}/assets/images/forkknifespoon.svg" alt="">	</a> -->
+		
+		{% if page.url == "/english.html" %}
+		<a class="reserve uppercase"href="javascript:void()">Reserve a table now!</a> <br>
 		{% include util.html %}
+		<p class="meal-desc">Take a look at our <a href="{{site.baseurl }}/assets/images/mulberry_menue.pdf" target="_blank" class="speisactivator"><strong class="uppercase underline">menu</strong></a> | <a href="{{site.baseurl }}/assets/images/Mulberry_Menue_Einleger_Basics_en.pdf" target="_blank"><strong class="uppercase underline">Basics</strong></a> or <a href="{{site.baseurl }}/assets/images/Mulberry_Weine.pdf" target="_blank"><strong class="uppercase underline">wine & drinks menu</strong></a></p>
 
-{% if page.url == "/english.html" %}
-	<p class="meal-desc">Take a look at our <a href="{{site.baseurl }}/assets/images/Mulberry_Menue_Mai.pdf" target="_blank" class="speisactivator"><strong class="uppercase underline">menu</strong></a> or <a href="{{site.baseurl }}/assets/images/Mulberry_Weine.pdf"><strong class="uppercase underline">wine menu</strong></a></p>
+		<div class="module offhidden">
+				<div id="close-icon" class="open">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+				</div>
+			<!-- Start Bookatable Code -->
+			<script type="text/javascript" src="https://bda.bookatable.com/deploy/lbui.direct.min.js"></script>
+			<script type="text/javascript">
+				LBDirect_Embed({
+					 connectionid  :  "DE-RES-MULBERRYST_428558:94233",
+					 style  :  {
+						 baseColor  :  "803351"
+					 },
+					 language  :  "us-EN"
+					});
+			</script>
+			<!-- End Bookatable Code -->
+		</div>
 
-{% else %}
-	<p class="meal-desc">Werfen Sie ein Blick in unsere <a href="{{site.baseurl }}/assets/images/Mulberry_Menue_Mai.pdf" target="_blank" class="speisactivator"><strong class="uppercase underline">Speisekarte</strong></a>, <br>
-		 <a href="{{site.baseurl }}/assets/images/spargelkarte.pdf" target="_blank" class="speisactivator"><strong class="uppercase underline">Spargelkarte</strong></a> oder <a href="{{site.baseurl}}/assets/images/Mulberry_Weine.pdf"><strong class="uppercase underline">Weinkarte</strong></a></p>
+		{% else %}
+		<a class="reserve uppercase"href="javascript:void()">Reservieren Sie einen Tisch!</a> <br>
+		{% include util.html %}
+	<p class="meal-desc">Werfen Sie ein Blick in unsere <a href="{{site.baseurl }}/assets/images/mulberry_menue.pdf" target="_blank" class="speisactivator"><strong class="uppercase underline">Speisekarte</strong></a> | <a href="{{site.baseurl }}/assets/images/Mulberry_Menue_Einleger_Basics_de.pdf" target="_blank"><strong class="uppercase underline">Basics</strong></a>, <br>
+		 <a href="{{site.baseurl }}/assets/images/spargelkarte.pdf" target="_blank" class="speisactivator"><strong class="uppercase underline">Spargelkarte</strong></a> oder <a href="{{site.baseurl}}/assets/images/Mulberry_Weine.pdf" target="_blank"><strong class="uppercase underline">Wein- und Getränkekarte</strong></a></p>
+
+		 <div class="module offhidden">
+				<div id="close-icon" class="open">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+				</div>
+			<!-- Start Bookatable Code -->
+			<script type="text/javascript" src="https://bda.bookatable.com/deploy/lbui.direct.min.js"></script>
+			<script type="text/javascript">
+				LBDirect_Embed({
+					 connectionid  :  "DE-RES-MULBERRYST_428558:94233",
+					 style  :  {
+						 baseColor  :  "803351"
+					 },
+					 language  :  "de-DE"
+					});
+			</script>
+			<!-- End Bookatable Code -->
+		</div>
 
 {% endif %}
 	</div>

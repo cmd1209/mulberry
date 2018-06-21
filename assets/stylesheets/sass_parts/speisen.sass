@@ -50,6 +50,26 @@ section.speisen
 .meal em
 	font-size: 75%
 
+.module
+	position: fixed
+	top: 50%
+	left: 50%
+	z-index: 1002
+	background-color: rgba($red,0.85)
+	padding: 4em
+	border-radius: 10px
+	@media all and (max-width: $screen-s)
+		padding: 4em 1em
+
+.centered
+	opacity: 1
+	transform: translate(-50%,-50%)
+	transition: all 0.367s ease-in-out
+.offhidden
+	opacity: 0
+	transform: translate(-50%,-250%)
+	transition: all 0.367s ease-in-out
+
 .speisactivator
 	font-weight: 700
 	color: $pink
@@ -82,6 +102,24 @@ section.speisen
 // 	animation: wiggle 5.33s ease-in infinite alternate
 // #fork
 // 	animation: wiggle 5.5s ease-in infinite
+
+.reserve
+	display: inline-block
+	max-width: 450px
+	margin: 0 0 2em 0
+	color: white!important
+	padding: 1em 2em
+	background-color: $pink
+	border-radius: 6px
+	font-size: 18px
+	box-shadow: 0 8px 10px -8px black
+	&:focus, &:visited
+		color: $pink!important
+	&:hover
+		box-shadow: 0 0px 5px 0px black
+		background-color: $blue!important
+		color: white!important
+
 
 .underline
 	font-size: 120%
